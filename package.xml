@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<package format="3">
+  <name>cooperative_localization</name>
+  <version>1.0.0</version>
+  <description>
+    Sistema di localizzazione cooperativa centralizzato basato sul Filro di Kalman Esteso.
+    Implementa algoritmi di fusione multi-sensoriale per la stima congiunta delle pose
+    di robot multipli utilizzando odometria, misurazioni landmark e misurazioni robot-robot.
+    Include supporto per dataset MRCLAM e tools di valutazione delle performance.
+  </description>
+
+  <maintainer email="example@example.com">Lorenzo Nobili, Leonardo Bacciocchi, Cosmin Alessandro Minut</maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+  </export>
+</package>
